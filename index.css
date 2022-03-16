@@ -35,7 +35,7 @@ h2{
 main {
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 @media (max-width:550px){
@@ -76,7 +76,6 @@ article p {
     
     font-size: 20px;
     text-align: center;
-    border: 2.5px solid grey; 
 
 }
 
@@ -146,6 +145,7 @@ footer{
     margin-left: 10px;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
+    padding:10px;
 }
 
 footer li {
