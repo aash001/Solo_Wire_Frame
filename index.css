@@ -11,7 +11,7 @@ nav ul {
    justify-content:space-between;
 }
 
-li + li{
+nav li + li{
     margin-left: 20px;
 }
 
@@ -38,6 +38,13 @@ main {
     margin-left: 20px;
 }
 
+@media (max-width:550px){
+    main {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
 .left img{
     display:inline-block;
 }
@@ -46,12 +53,14 @@ p {
     margin-bottom: 20px;
     text-align: center;
     margin-right: 50px;
+    
 }
 
 article {
 flex-basis: 50%; 
-min-width: 50%;   
+min-width: 50%; 
 }
+
 
 .left {
     flex-basis: 50%;
@@ -60,14 +69,15 @@ min-width: 50%;
 
 article img {
     max-width: 100%;
-    border: 5px solid white;
     margin-top: 10px;
 }
 
 article p {
-    border: 2px solid hsla(0,0%,40%,.5);
+    
     font-size: 20px;
     text-align: center;
+    border: 2.5px solid grey; 
+
 }
 
 h3 {
@@ -78,9 +88,20 @@ h3 {
 
 .testimonials {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
+.testimonials img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.testimonials p {
+    text-align: center;
+    margin-top:10px;
 }
 
 h4 {
@@ -94,19 +115,66 @@ display: flex;
 justify-content: space-between;
 align-items:center;
 margin-bottom: 20px;
+margin-left: 10px;
 }
 
 .bottomnav li:first-child{
-    font-family: 'Bebas Neue', cursive;;
-    text-align: center;
-    margin-right: 40px;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 10px;
 }
 
 .bottomnav a {
     text-decoration: none;
     color:black;
-    font-family: 'Bebas Neue', cursive;
 }
 
 .bottomnav li > a:hover {
 color:hsl(197, 89%, 50%)}
+
+.bottombutton {
+display: flex;
+flex-direction: column;
+margin-right: 20px;
+}
+
+.bottombutton a {
+    margin: 8px 0;
+}
+
+footer{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer div {
+    display: flex;
+    justify-content:center
+}
+
+footer ul {
+    display:flex;
+}
+footer li + li {
+    margin-left: 10px;
+    
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+}
+
+footer a:hover{
+    color:hsl(197, 89%, 50%)  
+}
+
+@media (max-width:550px){
+
+}
