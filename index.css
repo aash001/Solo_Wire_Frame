@@ -75,3 +75,29 @@ h3 {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.testimonials {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding:20px;
+
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.bottomnav {
+font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: space-between;
+align-items:center;
+margin-bottom: 20px;
+}
+
+.bottomnav li:first-child{
+    font-family: 'Bebas Neue', cursive;;
+    text-align: center;
+    margin-right: 40px;
+}
