@@ -101,3 +101,12 @@ margin-bottom: 20px;
     text-align: center;
     margin-right: 40px;
 }
+
+.bottomnav a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bottomnav li > a:hover {
+color:hsl(197, 89%, 50%)}
